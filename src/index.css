@@ -1,3 +1,9 @@
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +12,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body .footer {
+//border-top: 2px solid rgb(255, 255, 255);
+// border-bottom: 1px solid #333;
+  position: absolute;
+  bottom: 0;
+  background: lightgrey;
+  width: 100%;
+
+}
+
+.marginTop {
+  margin-top: 150px;
 }
