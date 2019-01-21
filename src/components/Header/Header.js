@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import lion from '../../lion.jpg';
+import {Link} from  'react-router-dom';
 export default class Header extends Component {
     render() {
         return (
@@ -22,7 +23,7 @@ export default class Header extends Component {
 
 
                                 <li className="nav-item">
-                                    <a target="_blank" href="https://qauniversity.cfapps.eu10.hana.ondemand.com/lda#topic=0&lambda=1&term=">Policies</a>
+                                    <Link to="/reddit">Reddit </Link>
                                 </li>
 
                             </ul>

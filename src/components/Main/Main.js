@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RenderHtml from '../RenderHtml';
+//import RenderHtml from '../RenderHtml';
 import QuestionInput from "../QuestionInput";
 import FileInput from "../FileInput";
 export default class Main extends Component {

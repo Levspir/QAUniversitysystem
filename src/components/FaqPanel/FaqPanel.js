@@ -8,14 +8,7 @@ export default class FaqPanel extends Component {
     };
 
 
-    toggle = ()=> {
-    this.setState((state) => {
-        return{
-            active: !state.active
-        };
-    });
 
-};
     render() {
          const faq = [
             {   question: 'Как мне найти контрагента?',
@@ -58,7 +51,7 @@ export default class FaqPanel extends Component {
             return (
 
                 <li className="list-group-item" key={item.id}
-                onClick={this.toggle}>
+               >
                      <FaqElement {...item }/>
 
                 </li>
@@ -71,7 +64,7 @@ export default class FaqPanel extends Component {
         return (
             <ul className="list-group">
                 { elements }
-                { this.state.active ? <FaqElement /> : null }
+
 
             </ul>
         )

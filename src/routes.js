@@ -1,12 +1,20 @@
 import React from 'react';
 // eslint-disable-next-line to
-import { BrowserRouter, Route,  } from 'react-router-dom';
+import { BrowserRouter as Router, Route,  } from 'react-router-dom';
 import Home from './components/Home';
+import { Provider } from 'react-redux';
+import Reddit from './components/Reddit';
+
 // import more components
-export default (
-    <BrowserRouter >
+const Root =({ store }) => (
+    <Provider store={store}>
+    <Router >
         <div>
-            <Route path='/' component={Home} />
+            <Route exact path='/' component={Home} />
+            <Route path='/reddit' component={Reddit} />
         </div>
-    </BrowserRouter>
+    </Router>
+        </Provider>
 );
+
+export default Root;

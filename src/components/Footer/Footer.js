@@ -7,7 +7,7 @@ export default class Footer extends Component {
                     <div className="row">
                         <div className="col mr-auto">
                             <p className="lead">
-                                (C) 2018 All Rights Reserved. QAsystem is a product of Sergey Lomdgaria and Lev Spiridonov!
+                                (C) 2018 All Rights Reserved. QAsystem is a product of Sergey Lomdgaria Valentin Veselov and Lev Spiridonov!
 
                             </p>
                         </div>
